@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  body {
+    background-color: #120B08;
+    color: #F8F4EE;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1C130E;
+}
+::-webkit-scrollbar-thumb {
+  background: #3D2A22;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C59A30;
+}
+
+/* Custom Glassmorphic Utilities */
+.glass-espresso {
+  background: rgba(28, 19, 14, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.glass-espresso-dark {
+  background: rgba(18, 11, 8, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.12);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #F4ECCF 0%, #D4AF37 50%, #C59A30 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-glow {
+  box-shadow: 0 0 25px -5px rgba(212, 175, 55, 0.25);
+}
+
+/* Seamless Image Overlay */
+.editorial-overlay {
+  background: linear-gradient(to top, rgba(18, 11, 8, 0.95) 0%, rgba(18, 11, 8, 0.4) 50%, rgba(18, 11, 8, 0.1) 100%);
+}
